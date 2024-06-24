@@ -24,9 +24,23 @@ exports.traerInventario = async (req,res) => {
 }
 
 exports.modificarInventario = async (req,res) => {
-    try {
-		
+	try {
+		const {imagen,producto,cantidad} = req.body
+		let inventarioData = await inventarioModel.findById(req.params.id)
+
+		if (!inventarioData) {
+			res.status(500).send({msg:'no se encontro el producto'})
+		} else {
+			inventarioData.imagen = imagen;
+			inventarioData.producto = producto;
+			inventarioData.cantidad = cantidad;
+
+			await inventarioModel.findByIdAndUpdate(req.params,id, inventarioData)
+			res.status(202).send('se actualizo la informacion')
+		}
 	} catch (error) {
-		
+		console.log(error);
+		res.status(500).send('no se pudo hacer el cambio')
 	}
 }
+
