@@ -1,10 +1,24 @@
 const express = require ('express')
 const router = express.Router();
 const usariosController = require('../controllers/usuarioController') 
+const productoController = require('../controllers/productoController')
 
-router.post('/',usariosController.crearUsuario)
-router.get('/',usariosController.obtenerUsuarios)
-router.get('/:id',usariosController.obtenerUsuario)
-router.delete('/:id',usariosController.eliminarUsuario)
+//rutas para crear y obtener usuarios
+router.post('/crear-usuario',usariosController.crearUsuario)
+router.get('/obtener-usuarios',usariosController.obtenerUsuarios)
+router.get('/obtener-usuario/:id',usariosController.obtenerUsuario)
+router.delete('/eliminar-usuario/:id',usariosController.eliminarUsuario)
+
+//rutas para crear, obtener, editar y eliminar productos
+router.post('/crear-producto',productoController.crearProducto)
+router.get('/obtener-productos',productoController.obtenerProductos)
+router.get('/obtenr-producto/:id',productoController.obtenerProducto)
+router.put('/modificar-producto/:id',productoController.modificarProducto)
+router.delete('/eliminar-producto/:id',productoController.eliminarProducto)
+
+//rutas para añadir,obtener ,modificar y eliminar inventario
+
+
+
 
 module.exports = router;

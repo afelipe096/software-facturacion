@@ -9,7 +9,7 @@ exports.crearUsuario = async (req, res) => {
 		res.send(usuarioData);
 	} catch (error) {
 		console.log(error);
-		res.status(404).send("hubo un proble con tu registro");
+		res.status(500).send("hubo un proble con tu registro");
 	}
 };
 
@@ -25,8 +25,13 @@ exports.obtenerUsuarios = async (req, res) => {
 
 exports.obtenerUsuario = async (req, res) => {
 	try {
-		const usuarioData = await usuarioModel.find();
-		return res.status(202).send(usuarioData);
+		const usuarioData = await usuarioModel.findById(req.params.id);
+		if (!usuarioData) {
+			return res.status(404).send({msg:'usuario no encontrado'})
+		} else {
+			return res.status(202).send(usuarioData);
+		}
+		
 	} catch (error) {
 		console.log(error);
 		res.status(404).send("no se encontro ningun usuario");
