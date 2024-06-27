@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const inventrioSchema = mongoose.Schema(
+const productoSchema = mongoose.Schema(
 	{
 		imagen: {
 			type: String,
@@ -9,7 +9,7 @@ const inventrioSchema = mongoose.Schema(
 			type: String,
 			required: true
 		},
-		cantidad:{
+		precio:{
 			type: String,
 			required: true
 		}
@@ -19,4 +19,5 @@ const inventrioSchema = mongoose.Schema(
 	}
 )
 
-module.exports = mongoose.model ('inventario',inventrioSchema)
+
+module.exports = mongoose.model("producto",productoSchema)

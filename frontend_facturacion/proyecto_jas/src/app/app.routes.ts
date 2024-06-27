@@ -14,4 +14,5 @@ export const routes: Routes = [
 {path:  "", component:EstadisticasComponent},
 { path:  "", component: ContactoComponent }
 
+
 ];
