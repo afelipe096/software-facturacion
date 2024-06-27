@@ -24,6 +24,4 @@ router.put('/modificar-inventario',inventarioController.modificarInventario)
 
 
 
-
-
 module.exports = router;

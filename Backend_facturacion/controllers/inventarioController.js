@@ -44,3 +44,18 @@ exports.modificarInventario = async (req,res) => {
 	}
 }
 
+exports.eliminarInventario = async (req,res) => {
+	try {
+		let inventarioData = await inventarioModel.findById(req.params.id)
+		if (!inventarioData) {
+			res.status(404).send({msg:'no se encontro'})
+		} else {
+			await inventarioModel.findByIdAndDelete(req.params.id)
+			res.status(202).send('se elimino el item')
+		}
+	} catch (error) {
+		console.log(error);
+		res.status(500).send('hubi un problema')
+	}
+}
+
