@@ -1,120 +1,99 @@
 <section>
     <div class="d-flex fl justify-content-lg-end p-1 nav nav-underline">
         <div class="pe-3 nav-item">
-            <div class="modal fade d-flex justify-content-center"id="exampleModalToggle"aria-hidden="true"
-                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div
+                class="modal fade"
+                id="exampleModalToggle"
+                aria-hidden="true"
+                aria-labelledby="exampleModalToggleLabel"
+                tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered">
-                    <body>
-                        <article>
-                            <div class="caja">
-                                <div class="caja2">
-                                    <h1 class="registro">Registrate</h1>
-                                    <div
-                                        class="cuboflotante d-flex justify-content-end">
-                                        <div class="cube-loader">
-                                            <div class="cube-top"></div>
-                                            <div class="cube-wrapper">
-                                                <span style="--i: 0"class="cube-span"></span>
-                                                <span style="--i: 1"class="cube-span"></span>
-                                                <span style="--i: 2"class="cube-span"></span>
-                                                <span style="--i: 3"class="cube-span"></span>
+                    <!DOCTYPE html>
+                    <html lang="en">
+                        <head>
+                            <meta charset="utf-8" />
+                            <meta
+                                name="viewport"
+                                content="width=device-width, initial-scale=1"/>
+                            <title>Bootstrap demo</title>
+                        </head>
+                            <article class="bg-white p-3 d-flex rounded">
+                                    <div class="">
+                                        <p class="fs-1 mb-0 fw-bolder">Registrate</p>
+                                        <p class="fs-3 mt-0 fw-medium" > Es rapido y fácil</p>
+                                        <div class="linea align-items-center"></div>
+                                        <div class="row g-3">
+                                            <div class="col-md-6">
+                                                <label for="inputEmail4" class="form-label fw-medium">Nombres</label>
+                                                <input type="text" class="form-control" id="inputEmail4">
                                             </div>
-                                        </div>
-                                    </div>
-                                    <a> Es rapido y fácil</a>
-                                    <div class="linea"></div>
-                                    <div class="row g-3">
-                                        <div class="col-md">
-                                            <div class="nombres">
-                                                <input type="text"class="form-control"placeholder="Nombre"/>
+                                            <div class="col-md-6">
+                                                <label for="inputPassword4" class="form-label fw-medium">Apellidos</label>
+                                                <input type="text" class="form-control" id="inputPassword4">
                                             </div>
-                                        </div>
-                                        <div class="col-md">
-                                            <div class="form nombres">
-                                                <input type="text"class="form-control"placeholder="Apellidos"/>
+                                            <div class="col-md-6 mt-0">
+                                                <label for="inputEmail4" class="form-label fw-medium">Correo electronico</label>
+                                                <input type="email" class="form-control" id="inputEmail4">
                                             </div>
-                                        </div>
-                                        <div class="row g3">
-                                            <div class="col-md">
-                                                <div class="form correo">
-                                                    <input type="email"class="form-control"placeholder="Correo electronico"/>
+                                            <div class="d-flex mt-0">
+                                                <div class="col-md-6 me-2">
+                                                    <label for="inputEmail4" class="form-label fw-medium">Contraseña</label>
+                                                    <input type="email" class="form-control fw-bolder" id="inputEmail4">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="inputPassword4" class="form-label fw-medium">Confirmar contraseña</label>
+                                                    <input type="password" class="form-control fw-bolder" id="inputPassword4">
                                                 </div>
                                             </div>
-                                            <div class="contraseña">
-                                                <input type="password"class="form-control"placeholder="Contraseña"/>
-                                            </div>
+                                        </div>
+                                        <p class="mt-3 mb-2 fw-medium">fecha de nacimiento</p>
+                                        <div>
+                                            <input
+                                                type="date"
+                                                class="form-control d-flex justify-content-center mb-4 w-50 place1"/>
+                                        </div>
+                                        <div class="cajaboton d-flex justify-content-center">
+                                            <button type="button" class="btn btn botonInicio text-white">Registrate</button>
                                         </div>
                                     </div>
-                                    <p class="mt-3 mb-2">fecha de nacimiento</p>
-                                    <div>
-                                        <input type="date"class="form-control d-flex justify-content-center mb-4 w-50 place1"/>
-                                    </div>
-                                    <div class="linea2"></div>
-                                    <p class="tipo pb-0 mb-0">Tipo de usuario</p>
-                                    <div class="boton-user">
-                                        <div class="form-check">
-                                            <input class="form-check-input"type="radio"name="flexRadioDefault"/>
-                                            <label class="form-check-label">
-                                                <p class="Cash">Adm account</p>
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input"type="radio"name="flexRadioDefault"/>
-                                            <label class="form-check-label"for="flexRadioDefault1">
-                                                <p class="Cash">Cashier account</p>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="cajaboton d-flex justify-content-center">
-                                        <a class="botonf mt-5 btn btn-dark" href="">Registrate</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </body>
+                            </article>
+                    </html>
                 </div>
             </div>
-            <button class="btn btn-primary" data-bs-target="#exampleModalToggle"data-bs-toggle="modal">Registrate</button>
+            <button
+                class="btn btn fs-5 fw-bolder"
+                data-bs-target="#exampleModalToggle"
+                data-bs-toggle="modal">
+                Registrate
+            </button>
         </div>
         <div class="pe-3 nav-item">
-            <div class="modal fade" id="mod2"aria-hidden="true" aria-labelledby="mod21"tabindex="-1">
+            <div class="modal fade"id="mod2"aria-hidden="true"aria-labelledby="mod21"tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="mod21">Modal 1</h1>
-                            <button type="button"class="btn-close"data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
                         <div class="modal-body">
                             <main>
-                                <section class="caja1">
-                                    <img class="imgF"src="/assets/LOGO STADISTIC.png"alt=""/>
-                                    <div class="subtitulo">
-                                        statistics and business
-                                    </div>
-                                </section>
                                 <section class="caja2">
-                                    <form class="mb-10 form">
-                                        <input type="text"placeholder="email@domain.com"/>
-                                        <input type="password"placeholder="Contraseña"/>
+                                    <form class="mb-4 form bg-white p-4 d-flex flex-column align-items-center rounded">
+                                        <input type="text"placeholder="Correo electronico"/>
+                                        <input type="password" placeholder="Contraseña"/>
                                         <div class="mb-3">
-                                            <a href="#" class="url1">¿Olvidaste la contraseña?</a>
+                                            <a href="#" class="text-dark justify-content-center"
+                                                >¿Olvidaste la contraseña?</a>
                                         </div>
-                                        <a class="btn1" href="">Iniciar sesión</a>
+                                        <button type="button" class="btn btn text-white botonInicio">Iniciar sesion</button>
                                     </form>
-                                    <div class="texto3">
-
-                                        Terminos de uso y privacidad de cookies
-                                    </div>
                                 </section>
                             </main>
                         </div>
-                    </div>
                 </div>
             </div>
-            <button class="btn btn-primary"data-bs-target="#mod2"data-bs-toggle="modal">Inicio</button>
+            <button class="btn btn fw-bolder fs-5" data-bs-target="#mod2"data-bs-toggle="modal">
+                Iniciar sesión
+            </button>
         </div>
         <div class="pe-5 nav-item">
-            <a class="text-decoration-none text-dark texto1 nav-link" href="">Ayuda ?</a>
+            <a class="text-decoration-none fw-bolder fs-5 texto1 nav-link" href=""
+                >Ayuda ?</a>
         </div>
     </div>
 </section>
@@ -124,7 +103,8 @@
             class="d-flex justify-content-center align-items-center flex-column h-100">
             <img class="img1" src="img/LOGO STADISTIC.png" alt="" />
             <section class="slider-opciones mt-5 slider1">
-                <div class="d-flex justify-content-center align-items-center iconos1">
+                <div
+                    class="d-flex justify-content-center align-items-center iconos1">
                     <i class="fa-solid fa-pizza-slice item1"></i>
                 </div>
                 <div class="d-flex justify-content-center align-items-center iconos1">
