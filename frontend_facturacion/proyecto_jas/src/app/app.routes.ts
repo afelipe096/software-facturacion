@@ -6,9 +6,11 @@ import { InicioComponent } from './components/admin/inicio/inicio.component';
 
 
 
+
 export const routes: Routes = [
     { path: "inicio", component: InicioComponent },
     { path: "crear-producto", component: AgregarProductoComponent },
     { path: "estadisticas", component: EstadisticasComponent },
-    { path: "contacto", component: ContactoComponent }
+    { path: "contacto", component: ContactoComponent },
+    { path: "inventario", component: InventarioComponent}
 ];
