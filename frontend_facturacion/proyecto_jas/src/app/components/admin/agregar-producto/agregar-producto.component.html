@@ -2,18 +2,43 @@
     <div class="col-sm-6 col-md-8">
         <div class="row row-cols-md-3 g-4 ms-4">
             <div class="col">
-                <div class="card" style="width: 18rem">
-                    <div class="w-auto fondo-card-1">
-                        <button class="btn boton-ejemplo ms-2 mt-2">
-                            <i class="fa-solid fa-plus"></i>
-                        </button>
-                    </div>
+                <div class="card" style="width: auto">
                     <div class="card-body me-5 text-start">
+                        <img src="/img/gris_280x280.png" class="mb-1" alt="" />
                         <h5 class="card-title titulo">PRODUCTO</h5>
                         <p class="card-text">$PRECIO DEL PRODUCTO</p>
-                        <a href="#" class="btn btn-primary"
-                            >AGREAGAR PRODUCTO</a
-                        >
+                        <div class="modal fade"id="exampleModalToggle"
+                            aria-hidden="true"aria-labelledby="exampleModalToggleLabel"tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-4"
+                                            id="exampleModalToggleLabel">AGREGA TU PRODUCTO</h1>
+                                        <button type="button"class="btn-close"
+                                            data-bs-dismiss="modal"aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="input-group">
+                                            <input type="file" class="form-control" id="inputGroupFile04"
+                                            aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                                        </div>
+                                        <div class="py-3">
+                                            <input type="text" class="form-control" placeholder="Nombre del producto"
+                                            aria-label="Nombre del producto">
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">$</span>
+                                            <input type="text" class="form-control"
+                                            aria-label="Dollar amount (with dot and two decimal places)" placeholder="PRECIO">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button
+                            class="btn btn-primary"
+                            data-bs-target="#exampleModalToggle"
+                            data-bs-toggle="modal">AGREGAR</button>
                     </div>
                 </div>
             </div>
