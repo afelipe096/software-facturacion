@@ -3,6 +3,7 @@ import { AgregarProductoComponent } from './components/admin/agregar-producto/ag
 import { EstadisticasComponent } from './components/admin/estadisticas/estadisticas.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { InicioComponent } from './components/admin/inicio/inicio.component';
+import { InventarioComponent } from './components/admin/inventario/inventario.component';
 
 
 
