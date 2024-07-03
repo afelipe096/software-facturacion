@@ -1,4 +1,7 @@
-
+.fondo_principal{
+    background: rgb(131,58,180);
+    background: linear-gradient(140deg, rgba(131,58,180,0.6055672268907564) 0%, rgba(29,67,253,0.5327380952380952) 50%, rgba(69,252,228,0.5943627450980392) 100%);
+}
 
 .texto1{
     font-weight: bold;
