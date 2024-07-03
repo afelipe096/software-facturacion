@@ -4,7 +4,9 @@ import { Injectable } from '@angular/core';
     providedIn: 'root'
 })
 export class ApiGeneralService {
-    seLogueo: any = true
+    seLogueo: any = false
+
+    
 
     constructor() { }
 
