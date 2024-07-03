@@ -21,11 +21,9 @@
     text-align: center;
 }
 
-.img1{
-    width: 50px;
-}
 
-input{
+
+.cantidad{
     width: 80px;
     border-radius: 5px;
     border-color: #a720e6;
