@@ -5,8 +5,8 @@ import { Injectable } from '@angular/core';
     providedIn: 'root'
 })
 export class ApiGeneralService {
-    urlApi: string = 'http://localhost:4200/api/facturacion';
-    seLogueo: any = false
+    urlApi: string = 'http://localhost:5200/api/facturacion';
+    seLogueo: any = true
 
     constructor(private http: HttpClient) { }
 
