@@ -7,7 +7,7 @@ import { productos } from '../components/models/productos';
 })
 export class ApiGeneralService {
     urlApi: string = 'http://localhost:5200/api/facturacion';
-    seLogueo: any = true
+    seLogueo: any = false
 
     constructor(private http: HttpClient) { }
 
