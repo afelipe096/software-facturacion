@@ -1,40 +1,37 @@
-.barra-pedidos{
+.barra-pedidos {
     width: auto !important;
     height: auto !important;
     margin-top: 0px !important;
     border: none;
 }
 
-.perfil{
-    display: flex;
-    justify-content: flex-start;
-}
-.foto-perfil{
-    margin-left: 35%;
-    margin-top: 0px;
-}
 
-.caja{
+.caja {
     height: 150px !important;
-
 }
-.caja-precios{
+
+.caja-precios {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.caja-estadisticas{
+.caja-estadisticas {
     margin-top: 30%;
-
 }
 
-.caja-resumen-dia{
+.caja-resumen-dia {
     height: 220px !important;
 }
 
-.grafico-dona{
+.grafico-dona {
     width: 200px !important;
     height: 200px !important;
     margin-left: 60px;
 }
+
+.estadisticas {
+    padding: 20px;
+}
+
+

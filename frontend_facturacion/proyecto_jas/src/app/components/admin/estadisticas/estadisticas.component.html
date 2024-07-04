@@ -1,295 +1,41 @@
-<section class="estadisticas">
-    <div class="fs-4 fw-bold ms-3 mb-3">Estadistica de ventas</div>
-    <div class="esatdistica_metas d-flex justify-content-evenly">
-        <div class="grafico-dona4 card">
-            <div class="card-body dona-4 d-flex ms-2 mb-2">
-                <div>
-                    <canvas id="diaMeta"></canvas>
-                </div>
-
-                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-                <script>
-                    const Dia = document.getElementById("diaMeta");
-
-                    new Chart(Dia, {
-                        type: "doughnut",
-                        data: {
-                            labels: ["Venta", "meta"],
-                            datasets: [
-                                {
-                                    label: "venta",
-                                    data: [150, 250],
-                                    borderWidth: 1,
-                                },
-                            ],
-                            hoverOffset: 4,
-                        },
-                    });
-                </script>
-                <div class="align-content-end ms-2">
-                    <p class="fs-5 fw-semibold text-start text-primary my-0">
-                        Hoy
-                    </p>
-                    <p class="fw-bold fs-5 text-start text-primary my-0">
-                        $150.000
-                    </p>
-                    <p class="fs-6 fw-semibold text-danger text-start my-0">
-                        Meta
-                    </p>
-                    <p class="text-start text-danger fs-4 fw-bold my-0">
-                        $400.000
-                    </p>
-                </div>
+<section class=" ">
+    <div class="d-flex justify-content-around mt-4">
+        <div class="card" style="width: 18rem">
+            <canvas id="myChart2"></canvas>
+            <div class="card-body">
+                <p class="card-text fs-4 fw-bolder">HOY</p>
             </div>
         </div>
-        <div class="grafico-dona4 card">
-            <div class="card-body dona-4 d-flex ms-2">
-                <div>
-                    <canvas id="semanaMeta"></canvas>
-                </div>
-
-                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-                <script>
-                    const semana = document.getElementById("semanaMeta");
-
-                    new Chart(semana, {
-                        type: "doughnut",
-                        data: {
-                            labels: ["Venta", "meta"],
-                            datasets: [
-                                {
-                                    label: "venta",
-                                    data: [500000, 2000000],
-                                    borderWidth: 1,
-                                },
-                            ],
-                            hoverOffset: 4,
-                        },
-                    });
-                </script>
-                <div class="align-content-end">
-                    <p class="fw-bold fs-4 text-start text-primary my-0">
-                        $150.000
-                    </p>
-                    <p class="fs-6 fw-semibold text-danger text-start my-0">
-                        Meta semana
-                    </p>
-                    <p class="text-start fs-4 fw-bold text-danger my-0">
-                        $2'800.000
-                    </p>
-                </div>
+        <div class="card" style="width: 18rem">
+            <canvas id="myChart3"></canvas>
+            <div class="card-body">
+                <p class="card-text fs-4 fw-bolder">SEMANA</p>
             </div>
         </div>
-
-        <div class="grafico-dona4 card">
-            <div class="card-body dona-4 d-flex ms-1">
-                <div>
-                    <canvas id="mesMeta"></canvas>
-                </div>
-
-                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-                <script>
-                    const mes = document.getElementById("mesMeta");
-
-                    new Chart(mes, {
-                        type: "doughnut",
-                        data: {
-                            labels: ["Venta", "meta"],
-                            datasets: [
-                                {
-                                    label: "venta",
-                                    data: [50, 400],
-                                    borderWidth: 1,
-                                },
-                            ],
-                            hoverOffset: 4,
-                        },
-                    });
-                </script>
-                <div class="align-content-end">
-                    <p class="fw-bold fs-4 text-start text-primary my-0">
-                        $150.000
-                    </p>
-                    <p class="fs-6 fw-semibold text-start text-danger my-0">
-                        Meta mes
-                    </p>
-                    <p class="text-start fs-4 fw-bold text-danger my-0">
-                        $12'000.000
-                    </p>
-                </div>
+        <div class="card" style="width: 18rem">
+            <canvas id="myChart4"></canvas>
+            <div class="card-body">
+                <p class="card-text fs-4 fw-bolder">MES</p>
             </div>
         </div>
-        <div class="grafico-dona4 card">
-            <div class="card-body dona-4 d-flex">
-                <div>
-                    <canvas id="añoMeta"></canvas>
-                </div>
-
-                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-                <script>
-                    const anual = document.getElementById("añoMeta");
-
-                    new Chart(anual, {
-                        type: "doughnut",
-                        data: {
-                            labels: ["Venta", "meta"],
-                            datasets: [
-                                {
-                                    label: "venta",
-                                    data: [4, 86],
-                                    borderWidth: 1,
-                                },
-                            ],
-                            hoverOffset: 4,
-                        },
-                    });
-                </script>
-                <div class="align-content-end">
-                    <p class="fw-bold fs-4 text-start text-primary my-0">
-                        $150.000
-                    </p>
-                    <p class="fs-6 fw-semibold text-start text-danger my-0">
-                        Meta año
-                    </p>
-                    <p class="text-start fs-4 fw-bold text-danger my-0">
-                        $144'000.000
-                    </p>
-                </div>
+        <div class="card" style="width: 18rem">
+            <canvas id="myChart5"></canvas>
+            <div class="card-body">
+                <p class="card-text fs-4 fw-bolder">AÑO</p>
             </div>
         </div>
     </div>
-    <div class="d-flex">
-        <div class="card ventas-semana m-3">
-            <div class="card-body grafico-barra">
-                <div>
-                    <canvas id="barraDiarias"></canvas>
-                </div>
-
-                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-                <script>
-                    const barras = document.getElementById("barraDiarias");
-
-                    new Chart(barras, {
-                        type: "bar",
-                        data: {
-                            labels: [
-                                "Lunes",
-                                "Martes",
-                                "Miercoles",
-                                "Jueves",
-                                "Viernes",
-                                "Sabado",
-                                "Domingo",
-                            ],
-                            datasets: [
-                                {
-                                    label: "ventas por dia",
-                                    data: [
-                                        400.0, 550.0, 350.0, 450.0, 600.0,
-                                        700.0, 650.0,
-                                    ],
-                                    borderWidth: 1,
-                                },
-                            ],
-                        },
-                        options: {
-                            scales: {
-                                y: {
-                                    beginAtZero: true,
-                                },
-                            },
-                        },
-                    });
-                </script>
+    <div class="d-flex mt-3 justify-content-center">
+        <div class="card" style="width: 40rem">
+            <canvas id="myChart"></canvas>
+            <div class="card-body">
+                <p class="card-text fs-5 fw-bolder">VENTAS DIARIAS</p>
             </div>
         </div>
-        <div class="card ventas-semana m-3">
-            <div class="card-body grafico-barra">
-                <div>
-                    <canvas id="graficoHora"></canvas>
-                </div>
-
-                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-                <script>
-                    const venta_hora = document.getElementById("graficoHora");
-
-                    new Chart(venta_hora, {
-                        type: "line",
-                        data: {
-                            labels: [
-                                "10 am",
-                                "11 am",
-                                "12 pm",
-                                "1 pm",
-                                "2 pm",
-                                "3 pm",
-                                "4 pm",
-                                "5 pm",
-                                "6 pm",
-                            ],
-                            datasets: [
-                                {
-                                    label: "productos vendidos por hora",
-                                    data: [5, 20, 25, 40, 32, 22, 35, 40, 15],
-                                    borderWidth: 1,
-                                },
-                            ],
-                        },
-                        options: {
-                            scales: {
-                                y: {
-                                    beginAtZero: true,
-                                },
-                            },
-                        },
-                    });
-                </script>
-            </div>
-        </div>
-    </div>
-    <div class="align-content-center">
-        <div class="card gastos-mes m-3 justify-content-center">
-            <div class="card-body gastos-barra">
-                <div>
-                    <canvas id="gastosMes"></canvas>
-                </div>
-
-                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-                <script>
-                    const gastos = document.getElementById("gastosMes");
-
-                    new Chart(gastos, {
-                        type: "bar",
-                        data: {
-                            labels: ["Gastos", "Ventas"],
-                            datasets: [
-                                {
-                                    label: "ventas y gastos ",
-                                    data: [100.0, 700.0],
-                                    borderWidth: 1,
-                                    backgroundColor: [
-                                        "rgb(255, 99, 132)",
-                                        "rgb(54, 162, 235)",
-                                    ],
-                                },
-                            ],
-                        },
-                        options: {
-                            scales: {
-                                y: {
-                                    beginAtZero: true,
-                                },
-                            },
-                        },
-                    });
-                </script>
+        <div class="card ms-5" style="width: 40rem">
+            <canvas id="myChart6"></canvas>
+            <div class="card-body">
+                <p class="card-text fs-5 fw-bolder">VENTAS POR HORA</p>
             </div>
         </div>
     </div>
