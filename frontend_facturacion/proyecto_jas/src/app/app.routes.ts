@@ -9,11 +9,9 @@ import { VentasComponent } from './components/ventas/ventas.component';
 
 
 
+
 export const routes: Routes = [
-<<<<<<< HEAD
-=======
-    { path: "", component: InicioComponent },
->>>>>>> origin/camilo
+
     { path: "crear-producto", component: AgregarProductoComponent },
     { path: "estadisticas", component: EstadisticasComponent },
     { path: "contacto", component: ContactoComponent },
