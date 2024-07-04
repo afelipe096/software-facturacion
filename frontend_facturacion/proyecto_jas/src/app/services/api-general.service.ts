@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 })
 export class ApiGeneralService {
     urlApi: string = 'http://localhost:5200/api/facturacion';
-    seLogueo: any = true
+    seLogueo: any = false
 
     constructor(private http: HttpClient) { }
 
@@ -17,5 +17,7 @@ export class ApiGeneralService {
     postRegistroUsuario(data:any) {
         return this.http.post(`${this.urlApi}/crear-usuario`, data)
     }
+
+
 
 }
