@@ -4,9 +4,11 @@
 
 const express = require ('express');
 const conectarDb = require ('./config/db')
+const cors = require("cors")
 
 const app = express()
 conectarDb()
+app.use(cors())
 app.use(express.json());
 
 app.use('/api/facturacion',require('./routes/rutas_aplicacion'))

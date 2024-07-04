@@ -65,3 +65,14 @@ input{
     background-color: #AA0BF5 !important ;
 }
 
+.caja-modal{
+ padding-top: 10px;
+ justify-content: center;
+ text-align: center;
+width: 100px;
+
+}
+.titulo{
+    padding-top: 5px;
+}
+

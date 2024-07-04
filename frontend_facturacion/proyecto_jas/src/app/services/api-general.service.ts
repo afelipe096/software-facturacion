@@ -1,14 +1,25 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
     providedIn: 'root'
 })
 export class ApiGeneralService {
+<<<<<<< HEAD
     seLogueo: any = true
+=======
+    urlApi: string = 'http://localhost:5200/api/facturacion';
+    seLogueo: any = false
+>>>>>>> origin/felipe
 
-    constructor() { }
+    constructor(private http: HttpClient) { }
 
-    obtenerStatusLogin(){
+    obtenerStatusLogin() {
         return this.seLogueo
     }
+
+    postRegistroUsuario(data:any) {
+        return this.http.post(`${this.urlApi}/crear-usuario`, data)
+    }
+
 }
