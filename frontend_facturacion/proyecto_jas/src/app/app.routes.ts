@@ -9,7 +9,7 @@ import { InventarioComponent } from './components/admin/inventario/inventario.co
 
 
 export const routes: Routes = [
-    { path: "inicio", component: InicioComponent },
+    { path: "", component: InicioComponent },
     { path: "crear-producto", component: AgregarProductoComponent },
     { path: "estadisticas", component: EstadisticasComponent },
     { path: "contacto", component: ContactoComponent },
