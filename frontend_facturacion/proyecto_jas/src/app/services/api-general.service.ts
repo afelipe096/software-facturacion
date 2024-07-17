@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { productos } from '../components/models/productos';
 
 @Injectable({
     providedIn: 'root'
@@ -14,10 +15,16 @@ export class ApiGeneralService {
         return this.seLogueo
     }
 
-    postRegistroUsuario(data:any) {
+    postRegistroUsuario(data: any) {
         return this.http.post(`${this.urlApi}/crear-usuario`, data)
     }
 
+    postCrearProductos(dataProducto: productos) {
+        return this.http.post(`${this.urlApi}/crear-producto`, dataProducto)
+    }
 
+    getObtenerProductos() {
+        return this.http.get(`${this.urlApi}/obtener-productos`)
+    }
 
 }

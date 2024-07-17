@@ -55,7 +55,7 @@ exports.eliminarInventario = async (req,res) => {
 		}
 	} catch (error) {
 		console.log(error);
-		res.status(500).send('hubi un problema')
+		res.status(500).send('hubo un problema')
 	}
 }
 

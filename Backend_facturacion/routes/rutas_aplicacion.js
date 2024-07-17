@@ -21,7 +21,7 @@ router.delete('/eliminar-producto/:id',productoController.eliminarProducto)
 router.post('/crear-inventario',inventarioController.crearInventario)
 router.get('/obtener-inventario',inventarioController.traerInventario)
 router.put('/modificar-inventario',inventarioController.modificarInventario)
-
+router.delete('/eliminar-item/:id',inventarioController.eliminarInventario)
 
 
 module.exports = router;

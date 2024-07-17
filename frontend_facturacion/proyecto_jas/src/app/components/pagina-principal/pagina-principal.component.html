@@ -106,6 +106,107 @@
 
 
     </section>
+    <div class=" titulo d-flex justify-content-end align-items-center">
+        <button type="button" class="  titulo fw-bolder fs-5 btn btn- d-flex " data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop">
+            Registrarse
+        </button>
+        <div class="pe-5 nav-item">
+            <a class=" titulo text-decoration-none fw-bolder fs-5 texto1 nav-link" href="">Ayuda ?</a>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Formulario de registro </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form [formGroup]="formPrincipal" (ngSubmit)="RegistroUsuario()" class=" caja-modal">
+                        <span>Nombre/s</span>
+                        <input type="text" id="nombre" name="nombre" required formControlName="nombres">
+
+                        <span>Apellido/s</span>
+                        <input type="text" id="apellido" name="apellido" required formControlName="apellidos">
+
+                        <span>Contraseña</span>
+                        <input type="password" id="contrasena" name="clave" required formControlName="clave">
+
+                        <span>Confirmar clave</span>
+                        <input type="password" id="contrasena" name="clave" required formControlName="rectificar_clave">
+
+                        <span>Fecha de Nacimiento:</span>
+                        <input type="date" id="fecha_nacimiento" name="fechaNacimiento" required
+                            formControlName="fechaNacimiento">
+
+                        <span>Correo Electrónico:</span>
+                        <input type="email" id="email" name="correoElectronico" required
+                            formControlName="correoElectronico">
+                        <button type="submit" class="btn btn-primary">Registrarse</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+<div class="row">
+    <div class="col-4 offset-4 columna-menu">
+        <section class="d-flex justify-content-center align-items-center flex-column h-100">
+            <img class="img1" src="img/LOGO STADISTIC.png" alt="">
+            <section class="slider-opciones mt-5 slider1">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/icono_pizza.png" class="d-block w-25 " alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/camisa.png" class="d-block w-25 " alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/copas.png" class="d-block w-25 " alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+        </section>
+    </div>
+</div>
+
+<section class="d-flex">
+    <div>
+        <button class="boton1">
+            <i class="fa-brands fa-facebook h1"></i>
+        </button>
+    </div>
+    <div>
+        <button class="boton1">
+            <i class="fa-brands fa-instagram h1"></i>
+        </button>
+    </div>
+    <div>
+        <button class="boton1">
+            <i class="fa-brands fa-twitter h1"></i>
+        </button>
+    </div>
+</section>
 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
