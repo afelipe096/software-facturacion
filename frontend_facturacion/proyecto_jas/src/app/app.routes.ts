@@ -12,9 +12,10 @@ import { VentasComponent } from './components/ventas/ventas.component';
 
 export const routes: Routes = [
 
-    { path: "crear-producto", component: AgregarProductoComponent },
+    { path: "agregar-producto", component: AgregarProductoComponent },
     { path: "estadisticas", component: EstadisticasComponent },
     { path: "contacto", component: ContactoComponent },
     { path: "inventario", component: InventarioComponent},
     { path: "ventas", component: VentasComponent},
+  
 ];
