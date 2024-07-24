@@ -1,0 +1,78 @@
+.fondo_principal{
+    background: rgb(131,58,180);
+    background: linear-gradient(140deg, rgba(131,58,180,0.6055672268907564) 0%, rgba(29,67,253,0.5327380952380952) 50%, rgba(69,252,228,0.5943627450980392) 100%);
+}
+
+.texto1{
+    font-weight: bold;
+}
+
+.columna-menu{
+    height: 82vh;
+}
+
+.img1{
+    width: 200px;
+}
+
+.slider1{
+    width: 100%;
+}
+
+.item1{
+    font-size: 4rem;
+}
+
+.boton1{
+    border: none;
+    background-color: transparent;
+}
+
+.boton-user{
+    display: flex;
+    justify-content: space-evenly;
+        border-bottom: #fff6f6;
+        border-radius: 5px;
+        border: 1px solid #e6d9d9;
+        box-shadow: rgba(255, 253, 253, 0.2);
+        height:30px;
+        width :444px;
+    }
+
+
+.linea{
+    display:flex;
+    justify-content: center;
+    width: 650px;
+    background:#1d1a1a;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: 1px;
+}
+
+input{
+    margin-bottom: 8px;
+    border-radius: 6px;
+    width: 321px;
+    height: 34px;
+    border: 1px solid #dddfe2;
+    font-size: 17px;
+    padding: 14px 16px;
+    align-items: center;
+}
+
+.botonInicio{
+    background-color: #AA0BF5 !important ;
+}
+
+.caja-modal{
+ padding-top: 10px;
+ justify-content: center;
+ text-align: center;
+width: 100px;
+
+}
+
+.titulo{
+    padding: 8.8px;
+}
