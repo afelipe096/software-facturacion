@@ -6,7 +6,7 @@ import { productos } from '../components/models/productos';
     providedIn: 'root'
 })
 export class ApiGeneralService {
-    urlApi: string = 'http://localhost:5200/api/facturacion';
+    urlApi: string = 'http://3.15.157.220:5200/api/facturacion';
     seLogueo: any = true
 
     constructor(private http: HttpClient) { }
