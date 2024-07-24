@@ -12,7 +12,7 @@ const productoSchema = mongoose.Schema(
 		precio:{
 			type: String,
 			required: true
-		}
+		},
 	},{
 		timestamps: true,
 		versionKey: false,

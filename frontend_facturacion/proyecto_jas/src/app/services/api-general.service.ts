@@ -9,6 +9,7 @@ export class ApiGeneralService {
     urlApi: string = 'http://3.15.157.220:5200/api/facturacion';
     seLogueo: any = true
 
+
     constructor(private http: HttpClient) { }
 
     obtenerStatusLogin() {
