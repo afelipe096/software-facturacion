@@ -17,10 +17,15 @@ phone: {
     type: Number,
     require: true
 },
+
+email: {
+    type: String,
+    require: true
+},
 role: {
     type: String,
     require: true,
-    default: 'Cliente'         //Admin, store admin, editor, publisher, cliente (este seria el registered user sin permisos, el consimidor)
+    default: 'Cliente'         //Admin, store admin, editor, publisher, cliente
 }
 },
 {   
