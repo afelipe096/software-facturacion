@@ -1,18 +1,14 @@
-//console.log('texto prueba nodemon');
-
-//creacion del sevidor
-
 const express = require ('express');
-const conectarDb = require ('./config/db')
+const dbConection = require ('./config/db')
 const cors = require("cors")
 
 const app = express()
-conectarDb()
+dbConection()
 app.use(cors())
 app.use(express.json());
 
-app.use('/api/facturacion',require('./routes/rutas_aplicacion'))
+app.use('/api/facturacion',require('./routes/auth.routes'))
 
-app.listen(5200, () =>{
-    console.log('el servidor esta arriba');
+app.listen(3000, () =>{
+    console.log('el servidor esta arriba');
 })

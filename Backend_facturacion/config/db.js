@@ -1,14 +1,15 @@
-const mongoose = require('mongoose');
-require('dotenv').config({path:'config.env'});
+const mongoose = require('mongoose')
+require('dotenv').config({path: 'config.env'});
 
-const conectarDb = async () => {
+const dbConection = async () => {
     try {
         await mongoose.connect(process.env.DB_MONGO)
-        console.log('DB conectada');
+        console.log('base de datos inicializada correctamente');
     } catch (error) {
-        console.log(error);
-        process.exit(1)
+        console.error(error)
+        throw new Error ('error al inicializar la base de datos')
     }
 }
 
-module.exports = conectarDb
+module.exports = dbConection
+
